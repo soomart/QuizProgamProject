@@ -1,0 +1,11 @@
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE
+;
+
+CREATE USER quizuser1 IDENTIFIED BY 1234
+;
+
+GRANT resource, dba, CONNECT TO quizuser1
+;
+
+GRANT CREATE ANY TABLE TO quizuser1
+;
